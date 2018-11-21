@@ -1,0 +1,635 @@
+<!--<!DOCTYPE html>-->
+<html>
+  <!--@HEAD-->
+  <head>
+    <title>A Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="A Survey Form">
+    <meta name="author" content="ridafatima">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--#FONT_AWESOME-->
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!--#FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  </head>
+  <!--@BODY-->
+  <body id="body">
+    <!--#NAVBAR-->
+    <div id="navbar"></div> 
+    <!--#ICON-->
+    <div id="icon">
+      <div class="logo">
+        <img src ="https://res.cloudinary.com/billu/image/upload/v1531670610/myFolder/imageedit_2_9631092026.png" alt="logo" id="logo">
+        <p id ="logo-tag">Rise Airways</p>
+      </div>
+    </div> 
+    <!--#BANNER-->
+    <div id="banner">
+      <img src="https://res.cloudinary.com/billu/image/upload/v1531664327/myFolder/pexels-photo-314726.jpg" id="banner-image">
+    </div>
+    <!--#CONTENT-->
+    <div id ="content">
+      <!--#POP_UP-->
+      <div id="pop-up">
+        <p id="thank-you">THANK YOU!</p>
+        <p>Your response has been submitted successfully.</p>
+        <p>Thank you for your participation.</p>
+      </div>
+      <div id="opacity"></div>
+      <header>
+        <h1 id="title">Airline Passenger Satisfaction Survey</h1>
+        <p id="description">Let us know how we can improve your experience</p>
+      </header>
+      <!--#FORM_START-->
+      <form id="survey-form">
+        <!--#DISCLAIMER-->
+        <div id="disclaimer">
+          <h2>Disclaimer</h2>
+          <p>This is a survey being conducted by <strong><em>"Rise Airways"</em></strong>. The participation in the survey is voluntary and free.</p>
+          <p>The purpose of this survey is to collect valuable feedback from our passengers in order to enhance their flight experience with us by providing superior quality services.</p>
+          <p>The procedure involves filling an online survey form that will take approximately 15 minutes. Your all responses will be confidential.
+  The survey questions will be related to your assessment of our airline. Please provide relevant and responsible responses.</p>
+          <p>The results of this survey will be used for improving our quality of services and facilities.</p>
+          <div id="agreement">
+            <label for="terms">Checking <strong>"Agree"</strong> below indicates that: </label>
+            <ul id="terms">
+              <li>you have read the above information</li>
+              <li>you voluntarily agree to participate</li>
+            </ul>
+            <input type="checkbox" id="agree" name="agree" value="agree" class="checkbox" required>
+            <label for="agree" id="agree-label">Agree</label>
+            <p id="warn-agree" class="warn"></p> 
+          </div>
+        </div>
+        <hr>
+        <!--#PERSONAL_INFORMATION_START-->
+        <div id="personal">
+          <h2>Personal Information</h2>
+          <div id="name-container">
+            <div class="label">
+              <label id="name-label" for="name">* Name:</label>
+            </div>
+            <div class="input">
+              <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z\s]+" required>
+              <p id="warn-name" class="warn"></p>
+            </div>   
+          </div>
+          <div id="email-container">
+            <div class="label">
+              <label id="email-label" for="email">* Email:</label>
+            </div>
+            <div class="input">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <p id="warn-email" class="warn"></p>
+            </div>
+          </div>
+          <div id="postalcode-container">
+            <div class="label">
+              <label id="postalcode-label" for="postal-code">* Postal code:</label>
+            </div>
+            <div class="input">
+              <input type="postal-code" id="postal-code" placeholder="Postal code" required>
+              <p id="warn-postal-code" class="warn"></p>
+            </div>
+          </div>
+          <div id="tel-container">
+            <div class="label">
+              <label id="tel-label" for="tel">Telephone:</label>
+            </div>
+            <div class="input">
+              <input type="tel" id="tel" placeholder="Contact number">
+            </div>
+          </div>
+          <div id="number-container">
+            <div class="label">
+              <label id="number-label" for="number">Age:</label>
+            </div>
+            <div class="input">
+              <input type="number" id="number" min="13" max="100" placeholder="age">
+            </div>
+          </div>
+          <div id="gender-container">
+            <div class="label">
+              <label id="radio-label" for="radio">Gender:</label>
+            </div>
+            <div class="input">
+              <div id="radio">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="Male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="Female">Female</label>
+              </div>
+            </div>
+          </div>
+          <div id="describe-container">
+            <div class="label">
+              <label id="dropdown-label" for="dropdown">Which of the following describes you best?</label>
+            </div>
+            <div class="input">
+              <select id="dropdown" value="dropdown">
+                <option value="none" selected disabled>Select an option</option>
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Self-employed">Self employed</option>
+                <option value="Retired">Retired</option>
+                <option value="Not-Employed">Not Employed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!--#PERSONAL_INFORMATION_END-->
+        <hr>
+        <!--#QUESTIONNAIRE_START-->
+        <div id="questionnaire">
+          <h2>Survey Questionnaire</h2>
+          <!--#QUESTION_1-->
+          <div id="question-1">
+            <div class="label">
+              <label for="dropdown-0">How often do you fly?</label>
+            </div>
+            <div class="input">
+              <select id="dropdown-0" value="dropdown-0">
+                <option value="none" selected disabled>Select an option</option>
+                <option value="week">Once a week or more</option>
+                <option value="month">2-3 times a month</option>
+                <option value="month">Once a month</option>
+                <option value="year">A few times a year</option>
+                <option value="year">Once a year or less</option>
+                <option value="never">Never</option>
+              </select>
+            </div>
+          </div>
+          <!--#QUESTION_2----#DIV_TABLE_0-->
+          <div id="question-2">
+            <div id="table-0-label">
+              <label for="table-0">Tell us how important of the following was in making your decision to use our airline:</label>
+            </div>
+            <div id="table-0">
+              <div id="table-0-row-head">
+                <div class="cell"><!--empty--></div>
+                <div class="cell"><label for="table-0-row-head">Important</label></div>
+                <div class="cell"><label for="table-0-row-head">Neutral</label></div>
+                <div class="cell"><label for="table-0-row-head">Unimportant</label></div>
+              </div>
+              <div id="table-0-row-1">
+                <div class="cell"><label for="table-0-row-1">Air fare was better:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-1-radio-0" name="table-0-row-1" value="table-0-row-1-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-1-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-1-radio-1" name="table-0-row-1" value="table-0-row-1-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-1-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-1-radio-2" name="table-0-row-1" value="table-0-row-1-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-1-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+              <div id="table-0-row-2">
+                <div class="cell"><label for="table-0-row-2">Convenient departure/arrival time:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-2-radio-0" name="table-0-row-2" value="table-0-row-2-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-2-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-2-radio-1" name="table-0-row-2" value="table-0-row-2-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-2-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-2-radio-2" name="table-0-row-2" value="table-0-row-2-radio-2"> 
+                  </span>
+                  <span class="invisible"><label for="table-0-row-2-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+              <div id="table-0-row-3">
+                <div class="cell"><label for="table-0-row-3">Aircraft preference:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-3-radio-0" name="table-0-row-3" value="table-0-row-3-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-3-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-3-radio-1" name="table-0-row-3" value="table-0-row-3-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-3-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-3-radio-2" name="table-0-row-3" value="table-0-row-3-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-3-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+              <div id="table-0-row-4">
+                <div class="cell"><label for="table-0-row-4">Frequent flyer program:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-4-radio-0" name="table-0-row-4" value="table-0-row-4-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-4-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-4-radio-1" name="table-0-row-4" value="table-0-row-4-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-4-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-4-radio-2" name="table-0-row-4" value="table-0-row-4-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-4-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+              <div id="table-0-row-5">
+                <div class="cell"><label for="table-0-row-5">Flight had fewer stops or better connections:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-5-radio-0" name="table-0-row-5" value="table-0-row-5-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-5-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-5-radio-1" name="table-0-row-5" value="table-0-row-5-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-5-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-5-radio-2" name="table-0-row-5" value="table-0-row-5-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-5-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+              <div id="table-0-row-6">
+                <div class="cell"><label for="table-0-row-6">Services are better:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-6-radio-0" name="table-0-row-6" value="table-0-row-6-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-6-radio-0">Important</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-6-radio-1" name="table-0-row-6" value="table-0-row-6-radio-1"> 
+                  </span>
+                  <span class="invisible"><label for="table-0-row-6-radio-1">Neutral</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-0-row-6-radio-2" name="table-0-row-6" value="table-0-row-6-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-0-row-6-radio-2">Unimportant</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#QUESTION_3----#DIV_TABLE_1-->
+          <div id="question-3">
+            <div id="table-1-label">
+              <label for="table-1">Please indicate how long you waited in line:</label>
+            </div>
+            <div id="table-1">
+              <div id="table-1-row-head">
+                <div class="cell"><!--empty--></div>
+                <div class="cell"><label for="table-1-row-head">Didn't Use</label></div>
+                <div class="cell"><label for="table-1-row-head">No Wait</label></div>
+                <div class="cell"><label for="table-1-row-head">0-15 min</label></div>
+                <div class="cell"><label for="table-1-row-head">20+ min</label></div>
+              </div>
+              <div id="table-1-row-1">
+                <div class="cell"><label for="table-1-row-1">Aircraft boarding:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-1-radio-0" name="table-1-row-1" value="table-1-row-1-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-1-radio-0">Didn't Use</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-1-radio-1" name="table-1-row-1" value="table-1-row-1-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-1-radio-1">No Wait</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-1-radio-2" name="table-1-row-1" value="table-1-row-1-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-1-radio-2">0-15 min</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-1-radio-3" name="table-1-row-1" value="table-1-row-1-radio-3">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-1-radio-3">20+ min</label></span>
+                </div>
+              </div>
+              <div id="table-1-row-2">
+                <div class="cell"><label for="table-1-row-2">Security check point:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-2-radio-0" name="table-1-row-2" value="table-1-row-2-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-2-radio-0">Didn't Use</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-2-radio-1" name="table-1-row-2" value="table-1-row-2-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-2-radio-1">No Wait</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-2-radio-2" name="table-1-row-2" value="table-1-row-2-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-2-radio-2">0-15 min</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-2-radio-3" name="table-1-row-2" value="table-1-row-2-radio-3">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-2-radio-3">20+ min</label></span>
+                </div>
+              </div>
+              <div id="table-1-row-3">
+                <div class="cell"><label for="table-1-row-3">Ticket counter:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-3-radio-0" name="table-1-row-3" value="table-1-row-3-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-3-radio-0">Didn't Use</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-3-radio-1" name="table-1-row-3" value="table-1-row-3-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-3-radio-1">No Wait</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-3-radio-2" name="table-1-row-3" value="table-1-row-3-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-3-radio-2">0-15 min</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-3-radio-3" name="table-1-row-3" value="table-1-row-3-radio-3">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-3-radio-3">20+ min</label></span>
+                </div>
+              </div>
+              <div id="table-1-row-4">
+                <div class="cell"><label for="table-1-row-4">For baggage at destination:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-4-radio-0" name="table-1-row-4" value="table-1-row-4-radio-0">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-4-radio-0">Didn't Use</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-4-radio-1" name="table-1-row-4" value="table-1-row-4-radio-1">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-4-radio-1">No Wait</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-4-radio-2" name="table-1-row-4" value="table-1-row-4-radio-2">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-4-radio-2">0-15 min</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-1-row-4-radio-3" name="table-1-row-4" value="table-1-row-4-radio-3">
+                  </span>
+                  <span class="invisible"><label for="table-1-row-4-radio-3">20+ min</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#QUESTION_4----#DIV_TABLE_2-->
+          <div id="question-4">
+            <div id="table-2-label">
+              <label for="table-2">Please rate these in-flight services:</label>
+            </div>
+            <div id="table-2">
+              <div id="table-2-row-head">
+                <div class="cell"><!--empty--></div>
+                <div class="cell"><label for="table-2-row-head">Satisfactory</label></div>
+                <div class="cell"><label for="table-2-row-head">Unsatisfactory</label></div>
+              </div>
+              <div id="table-2-row-1">
+                <div class="cell"><label for="table-2-row-1">Availability of flight attendants:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-1-radio-0" name="table-2-row-1" value="table-2-row-1-radio-0">
+                  </span>
+                  <span><label for="table-2-row-1-radio-0" class="invisible">Satisfactory</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-1-radio-1" name="table-2-row-1" value="table-2-row-1-radio-1">
+                  </span>
+                  <span><label for="table-2-row-1-radio-1" class="invisible">Unsatisfactory</label></span>
+                </div>
+              </div>
+              <div id="table-2-row-2">
+                <div class="cell"><label for="table-2-row-2">Courtesy of flight crews:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-2-radio-0" name="table-2-row-2" value="table-2-row-2-radio-0">
+                  </span>
+                  <span><label for="table-2-row-2-radio-0" class="invisible">Satisfactory</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-2-radio-1" name="table-2-row-2" value="table-2-row-2-radio-1">
+                  </span>
+                  <span><label for="table-2-row-2-radio-1" class="invisible">Unsatisfactory</label></span>
+                </div>
+              </div>
+              <div id="table-2-row-3">
+                <div class="cell"><label for="table-2-row-3">Pilot's communication with passenger:</label></div>
+                <div class="cell">
+                    <span class="visible">
+                      <input type="radio" id="table-2-row-3-radio-0" name="table-2-row-3" value="table-2-row-3-radio-0">
+                  </span>
+                    <span><label for="table-2-row-3-radio-0" class="invisible">Satisfactory</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-3-radio-1" name="table-2-row-3" value="table-2-row-3-radio-1">
+                  </span>
+                  <span><label for="table-2-row-3-radio-1" class="invisible">Unsatisfactory</label></span>
+                </div>
+              </div>
+              <div id="table-2-row-4">
+                <div class="cell"><label for="table-2-row-4">Quality of food and drinks:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-4-radio-0" name="table-2-row-4" value="table-2-row-4-radio-0">
+                  </span>
+                  <span><label for="table-2-row-4-radio-0" class="invisible">Satisfactory</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-4-radio-1" name="table-2-row-4" value="table-2-row-4-radio-1">
+                  </span>
+                  <span><label for="table-2-row-4-radio-1" class="invisible">Unsatisfactory</label></span>
+                </div>
+              </div>
+              <div id="table-2-row-5">
+                <div class="cell"><label for="table-2-row-5">Comfortable seating:</label></div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-5-radio-0" name="table-2-row-5" value="table-2-row-5-radio-0">
+                  </span>
+                  <span><label for="table-2-row-4-radio-0" class="invisible">Satisfactory</label></span>
+                </div>
+                <div class="cell">
+                  <span class="visible">
+                    <input type="radio" id="table-2-row-5-radio-1" name="table-2-row-5" value="table-2-row-5-radio-1">
+                  </span>
+                  <span><label for="table-2-row-5-radio-1" class="invisible">Unsatisfactory</label></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#QUESTION_5----#CHECKBOX_0-->
+          <div id="question-5">
+             <div class="label">
+               <label for="checkbox-0">Things that should be improved in the future:</label>
+             </div>
+            <div class="input">
+              <div id="checkbox-0">
+                <div for="checkbox-0-0">
+                  <input type="checkbox" id="checkbox-0-0" name="improvements" value="checkbox-0-0" class="checkbox">
+                  <label for="checkbox-0-0">staff and flight crew</label>
+                </div>
+                <div for="checkbox-0-1">
+                  <input type="checkbox" id="checkbox-0-1" name="improvements" value="checkbox-0-1" class="checkbox">
+                  <label for="checkbox-0-1">Aircraft quality</label>
+                </div>
+                <div for="checkbox-0-2">
+                  <input type="checkbox" id="checkbox-0-2" name="improvements" value="checkbox-0-2" class="checkbox">
+                  <label for="checkbox-0-2">In-flight services</label>
+                </div>
+                <div for="checkbox-0-3">
+                  <input type="checkbox" id="checkbox-0-3" name="improvements" value="checkbox-0-3" class="checkbox">
+                  <label for="checkbox-0-3">Baggage capacity</label>
+                </div>
+                <div for="checkbox-0-4">
+                  <input type="checkbox" id="checkbox-0-4" name="improvements" value="checkbox-0-4" class="checkbox">
+                  <label for="checkbox-0-4">Flight schedule</label>
+                </div>
+                <div for="checkbox-0-5">
+                  <input type="checkbox" id="checkbox-0-5" name="improvements" value="checkbox-0-5" class="checkbox">
+                  <label for="checkbox-0-5">Others</label>
+                  <input for="checkbox-0-5" type="text" id="checkbox-0-5-others" name="checkbox-0-5-others" pattern="[A-Za-z\s]+">
+                </div>
+              </div>
+            </div>  
+          </div>
+          <!--#QUESTION_6-->
+          <div id="question-6">
+            <div class="label">
+              <label id="radio-label-1" for="radio-1">How likely is that you would recommend us to a friend?</label>
+            </div>
+            <div class="input">
+              <div id="radio-1">
+                <div for="Definitely">
+                  <input type="radio" id="Definitely" name="recommend" value="Definitely">
+                  <label for="Definitely">Definitely</label>
+                </div>
+                <div for="Maybe">
+                  <input type="radio" id="Maybe" name="recommend" value="Maybe">
+                  <label for="Maybe">May be</label>
+                </div>
+                <div for="Not-sure">
+                  <input type="radio" id="Not-sure" name="recommend" value="Not-sure">
+                  <label for="Not-sure">Not sure</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#QUESTION_7-->
+          <div id="question-7">
+            <div class="label">
+              <label id="radio-label-2" for="radio-2">Would you like to travel with us again?</label>
+            </div>
+            <div class="input">
+              <div id="radio-2">
+                <div for="yes">
+                  <input type="radio" id="yes" name="travel-again" value="yes">
+                  <label for="yes">Yes</label>
+                </div>
+                <div for="Maybe">
+                  <input type="radio" id="no" name="travel-again" value="no">
+                  <label for="No">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--#QUESTION_8----#TEXTAREA-->
+          <div id="question-8">
+            <div class="label">
+              <label id="textarea-label" for="textarea">Any Comments or Suggestions?</label>
+            </div>
+            <div class="input">
+              <textarea id="textarea" value="textarea" name="comments" maxlength="250" rows="5" col="10" wrap="hard" placeholder="Enter your comment here..."></textarea>
+            </div>
+          </div>
+        </div>      
+        <!--#QUESTIONNAIRE_END-->
+        <!--#SUBMIT_INPUT_BUTTON-->
+        <div for="submit" id="submit-label">
+          <input id="submit" type="submit" value="submit">
+          <p id="warn-submit"></p>
+        </div>
+      </form>
+      <!--#FORM_END-->
+      <hr>
+      <!--#FOOTER-->
+      <footer>
+        <!-- #CODED_BY_START-->
+        <div id="coded-by">
+          <div>
+            <small>Written and coded by <a href="#" target="_blank"><em id="my-name">Rida</em></a>  © <script type="text/javascript">
+    document.write(new Date().getFullYear());
+  </script>. All Rights Reversed</small>
+          </div>
+          <!--#FONT_AWESOME_ICONS_START-->
+          <div>
+            <a href="#" class="social-button"><i class="fa fa-github"></i></a>
+            <a href="#" class="social-button"><i class="fa fa-google-plus"></i></a>
+            <a href="#" class="social-button"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="social-button"><i class="fa fa-fire"></i></a>
+          </div>
+          <!--#FONT_AWESOME_ICONS_END-->
+        </div>
+        <!-- #CODED_BY_END-->
+      </footer>
+    </div>
+    <!--#SCRIPTS-->
+    <script src="js/index.js"></script>
+  </body>
+</html>
